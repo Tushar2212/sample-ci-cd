@@ -57,9 +57,11 @@ jobs:
 
       - name: firebase tools installation using npm
         run: sudo npm install -g firebase-tools
+      - name: print current dir
+        run: pwd
 
-      - name: deploy on firebase
-        run: firebase deploy --token 1//0gRHMFIbTsWtrCgYIARAAGBASNwF-L9IrOfIsIXcrD_zak4rbcnEEjWTbbR_Udh4t-DXGbc5Z1R41vBvg8r2iWZ3Oo9TPFbeizzU
+#      - name: deploy on firebase
+#        run: firebase deploy --token 1//0gRHMFIbTsWtrCgYIARAAGBASNwF-L9IrOfIsIXcrD_zak4rbcnEEjWTbbR_Udh4t-DXGbc5Z1R41vBvg8r2iWZ3Oo9TPFbeizzU
 
 
 
