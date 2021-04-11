@@ -52,7 +52,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: firebase tools installation
+      - name: Change owner to install firebase tools
+        run: sudo chown -R 65534:121 "/root/.npm"
+
+      - name: firebase tools installation using npm
         run: sudo npm install -g firebase-tools
 
       - name: deploy on firebase
