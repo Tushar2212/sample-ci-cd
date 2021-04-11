@@ -59,7 +59,7 @@ jobs:
         run: sudo npm install -g firebase-tools
       
       - name: cd
-        run: cd..
+        run: cd -
         
       - name: ls
         run: ls 
