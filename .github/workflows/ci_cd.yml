@@ -20,9 +20,12 @@ jobs:
 
       - name: Install flutter
         run: git clone https://github.com/flutter/flutter.git
-
+    
       - name: Set path
         run: echo "$GITHUB_WORKSPACE/flutter/bin" >> $GITHUB_PATH
+
+      - name: Switch to stable flutter channel
+        run: flutter channel stable
 
       - name: Run flutter doctor
         run: flutter doctor -v
