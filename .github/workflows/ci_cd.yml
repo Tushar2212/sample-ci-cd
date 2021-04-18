@@ -87,4 +87,4 @@ jobs:
 #         run: firebase --project="flutter-ci-cd" --token 1//0gRHMFIbTsWtrCgYIARAAGBASNwF-L9IrOfIsIXcrD_zak4rbcnEEjWTbbR_Udh4t-DXGbc5Z1R41vBvg8r2iWZ3Oo9TPFbeizzU
         
       - name: deploy on firebase
-        run: firebase deploy --only hosting --project="flutter-ci-cd-4693a" --token 1//0gttNfCEkRzITCgYIARAAGBASNwF-L9Ir73vjYB7wnErX_o5JTDUEt_lrGq-GKGAXXqhc9szMIbYCEtQKDZ-b4fQ9lR57Jt6QBvU
+        run: firebase deploy --only hosting:build/web --project="flutter-ci-cd-4693a" --token 1//0gs9BMCgh2hpVCgYIARAAGBASNwF-L9IrayNbu1fTV-U65itAv5sYi4seZ0GNE1aFrCzIoAtSp32ABYQZWKIu4uqwKXEMVYRtopA
