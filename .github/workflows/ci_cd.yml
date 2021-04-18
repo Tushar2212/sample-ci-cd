@@ -84,7 +84,7 @@ jobs:
         
       - name: show build
         shell: bash
-        run: cd build/web && ls -a   
+        run: cd build/web/artifact && ls -a   
         
 #       - name: choose project
 #         run: firebase --project="flutter-ci-cd" --token 1//0gRHMFIbTsWtrCgYIARAAGBASNwF-L9IrOfIsIXcrD_zak4rbcnEEjWTbbR_Udh4t-DXGbc5Z1R41vBvg8r2iWZ3Oo9TPFbeizzU
