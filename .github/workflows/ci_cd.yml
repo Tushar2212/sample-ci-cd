@@ -42,7 +42,8 @@ jobs:
       - name: upload build artifact
         uses: actions/upload-artifact@master
         with:
-          path: build/web
+          name: web
+          path: build
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
@@ -69,7 +70,8 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
-          path: build/web
+          name: web
+          path: build
           
 #       - name: Change owner to install firebase tools
 #         run: sudo chown -R 65534:121 "/root/.npm"
@@ -90,4 +92,4 @@ jobs:
 #         run: firebase --project="flutter-ci-cd" --token 1//0gRHMFIbTsWtrCgYIARAAGBASNwF-L9IrOfIsIXcrD_zak4rbcnEEjWTbbR_Udh4t-DXGbc5Z1R41vBvg8r2iWZ3Oo9TPFbeizzU
         
       - name: deploy on firebase
-        run: firebase deploy --only hosting:build/web --project="flutter-ci-cd-4693a" --token 1//0gs9BMCgh2hpVCgYIARAAGBASNwF-L9IrayNbu1fTV-U65itAv5sYi4seZ0GNE1aFrCzIoAtSp32ABYQZWKIu4uqwKXEMVYRtopA
+        run: firebase deploy --only hosting --project="flutter-ci-cd-4693a" --token 1//0gs9BMCgh2hpVCgYIARAAGBASNwF-L9IrayNbu1fTV-U65itAv5sYi4seZ0GNE1aFrCzIoAtSp32ABYQZWKIu4uqwKXEMVYRtopA
